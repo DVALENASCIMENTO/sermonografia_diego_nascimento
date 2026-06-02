@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#050505;
+    color:#fff;
+    font-family:Georgia, serif;
+
+}
+
+/* HERO */
+
+.hero{
+
+    height:70vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.9)),
+    url('../img/hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+}
+
+.hero-content{
+
+    max-width:900px;
+    padding:20px;
+}
+
+.subtitle{
+
+    color:#c8a96b;
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+}
+
+.hero h1{
+
+    font-size:5rem;
+
+    margin:20px 0;
+
+    color:#c8a96b;
+}
+
+.hero p{
+
+    font-size:1.2rem;
+
+    line-height:2;
+
+    color:#ddd;
+}
+
+/* CONTADOR */
+
+.contador{
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    background:#111;
+}
+
+.contador h2{
+
+    color:#c8a96b;
+}
+
+/* PESQUISA */
+
+.search-box{
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.search-box input{
+
+    width:90%;
+    max-width:700px;
+
+    padding:16px 25px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+/* PREGAÇÕES */
+
+.pregacoes{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:50px 5%;
+}
+
+.sermao{
+
+    display:flex;
+
+    gap:40px;
+
+    background:#111;
+
+    margin-bottom:40px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s;
+}
+
+.sermao.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+.sermao img{
+
+    width:350px;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+}
+
+.conteudo{
+
+    flex:1;
+}
+
+.tema{
+
+    color:#c8a96b;
+
+    font-weight:bold;
+
+    display:block;
+
+    margin-bottom:10px;
+}
+
+.conteudo h3{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.conteudo p{
+
+    line-height:2;
+
+    margin-bottom:25px;
+
+    color:#ddd;
+}
+
+audio{
+
+    width:100%;
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#000;
+
+    padding:60px 20px;
+
+    text-align:center;
+}
+
+footer h3{
+
+    color:#c8a96b;
+
+    margin-bottom:15px;
+}
+
+/* BOTÃO TOPO */
+
+#topBtn{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#c8a96b;
+
+    color:#000;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .hero h1{
+
+        font-size:3rem;
+    }
+
+    .sermao{
+
+        flex-direction:column;
+    }
+
+    .sermao img{
+
+        width:100%;
+        height:auto;
+    }
+
+}
